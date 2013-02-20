@@ -1,0 +1,32 @@
+/* 
+    Document   : plantilla
+    Created on : 20-feb-2013, 18:10:49
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    background-color: #ffffff;
+}
+#a
+{
+    background-color: #8BA21C;
+    border-radius: 15px;
+}
+#b
+{
+    background-color: #8BA21C;
+    border-radius: 15px;
+}
+#c
+{
+    background-color: #E2017B;
+    border-radius: 15px;
+    margin-top: 2.5%;
+}
