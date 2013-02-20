@@ -12,10 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <h1>Hello World!</h1>
-        <h1>Hello WorldPipaaasss</h1>
-        <h1>Andrea</h1>
+        
         <h1>Dani</h1>
     </body>
 </html>
