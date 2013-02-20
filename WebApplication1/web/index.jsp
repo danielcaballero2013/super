@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
-        <h1>Dani</h1>
-    </body>
+        <h1>La pena</h1>
+        <h1>La pena 2</h1>
+     </body>
 </html>
