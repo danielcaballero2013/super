@@ -13,18 +13,16 @@
         <link rel="stylesheet" href="Estilos/plantilla.css" type="text/css"/>
     </head>
     <body>
-       <div id="a">
-        <h1>Hello World!</h1>
+      <div id="a">
+       
     </div>
         <div id="b">
-        
+       
     </div>
-        <div id="c">
-        <h1>Hello World!</h1>
-    </div>
+      
      
            <div id="pie">
-            <h5>Pie</h5>
+            
         </div>
     </body>
 </html>
