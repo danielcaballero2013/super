@@ -23,8 +23,8 @@
         <div id="tablaDatos">
             <table>
                 <tr>
-                    <td colspan="3">
-                    <h4>Panel de configuraci&oacute;n</h4>
+                    <td id="cabeceraTitulo" colspan="3">
+                    <h4 id="cabeceraTitTexto">Panel de configuraci&oacute;n</h4>
                 </td>
                 </tr>
                 <tr>
@@ -34,8 +34,8 @@
                     <td>
                         <input disabled="true" class="inp" type="text" id="txtNombre" name="tNombre" value="Nombre" />
                     </td>
-                    <td>
-                        <a href="#">Cambiar</a>
+                    <td class="cabecerasTabla">
+                        <a href="#" class="">Cambiar</a>
                     </td>
                 </tr>
                 <tr>
@@ -45,8 +45,30 @@
                     <td>
                         <input disabled="true" class="inp" type="text" id="txtApellidos" name="tApellidos" value="Apellidos" />
                     </td>
-                    <td>
-                        <a href="#">Cambiar</a>
+                    <td class="cabecerasTabla">
+                        <a href="#" class="cabecerasTabla">Cambiar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cabecerasTabla">
+                        <h5 class="estilosCabecerasTabla">Direcci&oacute;n</h5>
+                    </td>
+                      <td>
+                        <input disabled="true" class="inp" type="text" id="txtDireccion" name="tDireccion" value="Dirección" />
+                    </td>
+                    <td class="cabecerasTabla">
+                        <a href="#" class="cabecerasTabla">Cambiar</a>
+                    </td>
+                </tr>
+                 <tr>
+                    <td class="cabecerasTabla">
+                        <h5 class="estilosCabecerasTabla">Correo elec</h5>
+                    </td>
+                      <td>
+                        <input disabled="true" class="inp" type="text" id="txtDireccion" name="tCorreoE" value="xxxxxx@gmail.com" />
+                    </td>
+                    <td class="cabecerasTabla">
+                        <a href="#" class="cabecerasTabla">Cambiar</a>
                     </td>
                 </tr>
                
