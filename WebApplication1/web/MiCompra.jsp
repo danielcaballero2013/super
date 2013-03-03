@@ -9,9 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="stylesheet" href="Estilos/EstiloMiCuenta.css" type="text/css"/>
+        <title>Mi Compra</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+       <div id="cabecera1">
+           <h4 id="nombreUsuario">//NOMBRE DE USUARIO</h4>
+    </div>
+        <div id="cabecera2">
+       
+       </div>
     </body>
 </html>
