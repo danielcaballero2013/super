@@ -10,8 +10,134 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="Estilos/plantilla.css" type="text/css"/>
+        <link rel="stylesheet" href="Estilos/EstiloRegistro.css" type="text/css"/>
     </head>
     <body>
-        <h1>Hello World!</h1>
+      <div id="a">
+          <p id="usuario">
+             Nombre y apellido
+          </p>
+    </div>
+        <div id="b">
+            
+                
+       
+    </div>
+        <table id="datos">
+            <tr>
+                <td>
+                     <br> <br>
+                    Nombre 
+                <td>
+                    <br> <br>
+                    <input type="text" size="20px" name="nom" id="nom" />
+                </td>
+                   
+                </td>
+                <td width="120">
+                    
+                </td>
+                <td>
+                     <br> <br>
+                    Apellido 
+                <td>
+                    <br> <br>
+                    <input type="text" size="20px" name="ape" id="ape" /> 
+                    </td>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                     <br>
+                  Dirección  
+                <td>
+                     <br>
+                    <input type="text" size="20px" name="dire" id="dire" />
+                    </td>
+                </td>
+                <td width="120">
+                    
+                </td>
+                <td>
+                     <br>
+                    Código posal 
+                    <td>
+                         <br>
+                        <input type="text" size="20px" name="cp" id="cp" />
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <br>
+                    Provincia 
+                <td>
+                     <br>
+                    <input type="text" size="20px" name="prov" id="prov" />
+                </td>
+                </td>
+                <td width="120">
+                    
+                </td>
+                <td>
+                     <br> 
+                    DNI 
+                    <td>
+                         <br>
+                        <input type="text" size="20px" name="dni" id="dni" />
+                        </td>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                     <br>
+                    Teléfono 
+                    <td>
+                         <br>
+                    <input type="text" size="20px" name="telf" id="telf" />
+                    </td>
+                </td>
+                <td width="120">
+                    
+                </td>
+                <td>
+                     <br>
+                   Correo electrónico 
+                <td>
+                     <br>
+                     <input type="text" size="20px" name="email" id="email" />
+                    </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <br>
+                    Contraseña 
+                    <td>
+                         <br>
+                         <input type="password" size="20px" name="pass" id="pass" />
+                        </td>
+                </td>
+                
+                <td width="120">
+                    
+                </td>
+                <td>
+                     <br>
+                   Repetir Contaseña 
+                   <td>
+                        <br>
+                        <input type="password" size="20px" name="pass1" id="pass1" />
+                       </td>
+                </td>
+            </tr>
+        </table>
+      
+     
+           <div id="pie">
+            
+        </div>
     </body>
 </html>

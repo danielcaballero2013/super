@@ -1,0 +1,18 @@
+/* 
+    Document   : EstiloRegistro
+    Created on : 03-mar-2013, 18:32:01
+    Author     : amoreno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+#datos
+{
+    font-size: 20px;
+}
+
+
+
