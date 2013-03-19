@@ -1,0 +1,60 @@
+/* 
+    Document   : IndexCSS
+    Created on : 26-feb-2013, 18:56:29
+    Author     : Javi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    background-color: #ffffff;
+}
+#cabecera1
+{
+    background-color: #8BA21C;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: right;  
+}
+
+#nombreUsuario
+{
+   font-family: Verdana;
+     padding: 12px;
+}
+
+#cabecera2
+{
+    background-color: #E2017B;
+    height: 40px;
+    border-radius: 15px;
+}
+
+#a
+{
+    background-color: #8BA21C;
+    height: 40px;
+    border-radius: 15px;
+}
+
+#b
+{
+    background-color: #E2017B;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 2.5%;
+}
+#pie
+{
+    background-color: #0194D9;
+    border-radius: 15px;
+    height: 15px;
+    margin-top: 38%;
+}
+
