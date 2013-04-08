@@ -42,14 +42,20 @@ root {
 }
 
 .jMenu li ul li {
-    background-color: white;
+    /*background-color: white; */
+    opacity: 0.6;
+    filter: "alpha(opacity=60)"; 
+    filter: alpha(opacity=60);
     display: block;
     border-bottom: 1px solid #484548;
     padding: 0;
 }
 
 .jMenu li ul li.arrow {
-    background-color: white;
+    /*background-color: white; */
+    opacity: 0.6;
+    filter: "alpha(opacity=60)"; 
+    filter: alpha(opacity=60);  
     background-image: url('../Imagenes/arrow_down.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -69,7 +75,10 @@ root {
 }
 
 .jMenu li ul li a.isParent {
-    background-color: white;
+    /* background-color: white; */
+    opacity: 0.6;
+    filter: "alpha(opacity=60)"; 
+    filter: alpha(opacity=60);  
     background-image: url('../Imagenes/arrow_right.png');
     background-repeat: no-repeat;
     background-position: right center;
