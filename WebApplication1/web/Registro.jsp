@@ -12,19 +12,18 @@
         <title>JSP Page</title>
         <link rel="stylesheet" href="Estilos/plantilla.css" type="text/css"/>
         <link rel="stylesheet" href="Estilos/EstiloRegistro.css" type="text/css"/>
+        <script type="text/javascript" src="JavaScript/validar.js"></script>
+        <script type="text/javascript" src="JS/confirmar.js"></script>
+        
     </head>
     <body>
-      <div id="a">
-          <p id="usuario">
-             Nombre y apellido
-          </p>
+    <div id="a"></div>
+    <div id="b">
+        <a href="index.jsp">Volver</a>
     </div>
-        <div id="b">
-            
-                
-       
-    </div>
-        <table id="datos">
+    <div align="center" class="registro">Registrarse</div>
+    <form >    
+    <table align="center" id="datos">
             <tr>
                 <td>
                      <br> <br>
@@ -134,10 +133,12 @@
                 </td>
             </tr>
         </table>
-      
-     
-           <div id="pie">
-            
-        </div>
+    </form>
+    <br>
+     <div align="center">
+        <button class="boton" onclick="valida()">Confirmar datos</button>
+        <%--<input type="button" class="boton" value="   Confirmar datos  " onClick="valida()"/> --%>
+     </div>
+     <div id="pie"></div>
     </body>
 </html>
