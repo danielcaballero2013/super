@@ -50,6 +50,24 @@ body
     border-radius: 15px;
     margin-top: 2.5%;
 }
+
+#centro
+{
+    float: left;
+    background-color: blue;
+    margin-top: 50px;
+    margin-left: 2%;
+    width:100px;
+    height: 150px;
+    opacity: 0.5;
+    filter: "alpha(opacity=50)"; 
+    filter: alpha(opacity=50);
+}
+
+#imga{
+    height: 150px;
+}
+
 #pie
 {
     background-color: #0194D9;
@@ -60,9 +78,9 @@ body
 
 #makeMeScrollable
 		{
-                        margin-left: 25%;
-			width:50%;
-			height: 200px;
+                        margin-left: 12.5%;
+			width:75%;
+			height: 150px;
 			position: relative;
 		}
 		

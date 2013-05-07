@@ -39,10 +39,10 @@
                             <li><a>Melón</a></li>
                         </ul>
                     </li>
-                    <li><a>Pescados</a></li>
+                    <li><a> Pescados </a></li>
                 </ul>
             </li>
-            <li><a class="fNiv">Lácteos</a><!-- Do not forget the "fNiv" class for the first level links !! -->
+            <li><a class="fNiv"> Lácteos </a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
                     <li><a>Leche</a>
@@ -100,15 +100,24 @@
         </br>
         
         <div id="makeMeScrollable">
-		<img src="Imagenes/images/demo/1.jpg" alt="Demo image" id="field" />
-		<img src="Imagenes/images/demo/2.jpg" alt="Demo image" id="gnome" />
-		<img src="Imagenes/images/demo/3.jpg" alt="Demo image" id="pencils" />
-		<img src="Imagenes/images/demo/4.jpg" alt="Demo image" id="golf" />
-		<img src="Imagenes/images/demo/5.jpg" alt="Demo image" id="river" />
-		<img src="Imagenes/images/demo/6.jpg" alt="Demo image" id="train" />
-		<img src="Imagenes/images/demo/7.jpg" alt="Demo image" id="leaf" />
-		<img src="Imagenes/images/demo/8.jpg" alt="Demo image" id="dog" />
+		<img src="Imagenes/images/demo/1.jpg" alt="Demo image" id="imga" />
+		<img src="Imagenes/images/demo/2.jpg" alt="Demo image" id="imga" />
+		<img src="Imagenes/images/demo/3.jpg" alt="Demo image" id="imga" />
+		<img src="Imagenes/images/demo/5.jpg" alt="Demo image" id="imga" />
+		<img src="Imagenes/images/demo/6.jpg" alt="Demo image" id="imga" />
+		<img src="Imagenes/images/demo/7.jpg" alt="Demo image" id="imga" />
+		<img src="Imagenes/images/demo/8.jpg" alt="Demo image" id="imga" />
 	</div>
+        <% for(int x=0; x<10; x++){ %>
+        <div id="centro">
+            <img src="Imagenes/images/demo/1.jpg" alt="Demo image" id="imga" />
+        </div>
+        
+        <% } %>
+        
+        <div id="centro">
+            
+        </div>
        
         <script type="text/javascript">
             $(document).ready(function() {
