@@ -13,11 +13,19 @@
         <title>Mi Compra</title>
     </head>
     <body>
-       <div id="cabecera1">
-           <h4 id="nombreUsuario">//NOMBRE DE USUARIO</h4>
-    </div>
+        <div id="cabecera1">
+            <h4 id="nombreUsuario">//NOMBRE DE USUARIO</h4>
+        </div>
         <div id="cabecera2">
-       
-       </div>
+
+        </div>
+
+
+
+
+
+        <div id="pie">
+
+        </div>
     </body>
 </html>

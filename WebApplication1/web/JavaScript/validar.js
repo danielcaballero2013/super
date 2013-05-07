@@ -4,26 +4,28 @@
  */
 function valida()
 {
-    if (document.getElementById("nom").value === "") 
+    if (document.getElementById("nom").value == "") 
         {
             alert ("Faltan datos por introducir");
+           
         }
-        else if(document.getElementById("ape").value === "")
+        else if(document.getElementById("ape").value == "")
             {
                 alert ("Faltan datos por introducir");
+                
             }
         
-    else if((!esNumerico(document.getElementById("cp").value))||(document.getElementById("cp").value.length !== 5))
+    else if((!esNumerico(document.getElementById("cp").value))||(document.getElementById("cp").value.length != 5))
                 {
                     alert("Código postal erroneo. Por favor, introdúzcalo de nuevo");
                     document.getElementById("cp").focus();
                 }
-    else if((!esCorrectoDNI(document.getElementById("dni").value))||(document.getElementById("dni").value.length !== 9))
+    else if((!esCorrectoDNI(document.getElementById("dni").value))||(document.getElementById("dni").value.length != 9))
                 {
                     alert("Dni erroneo. Por favor, introdúzcalo de nuevo");
                     document.getElementById("dni").focus();
                 }
-     else if((!esNumerico(document.getElementById("telf").value))||(document.getElementById("cp").value.length !== 9))
+     else if((!esNumerico(document.getElementById("telf").value))||(document.getElementById("cp").value.length != 9))
                 {
                     alert("Código postal erroneo. Por favor, introdúzcalo de nuevo");
                     document.getElementById("cp").focus();
