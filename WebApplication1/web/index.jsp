@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="Estilos/IndexCSS.css" type="text/css"/>
         <link rel="stylesheet" href="Estilos/jMenu.jquery.css" type="text/css" />
         <link rel="Stylesheet" type="text/css" href="Estilos/smoothDivScroll.css" />
+        <script type="text/javascript" src="JavaScript/indexJSP.js"></script>
+        
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript" src="JavaScript/jquery-ui.js"></script>
         <script type="text/javascript" src="JavaScript/jMenu.jquery.js"></script>
@@ -24,6 +26,8 @@
         
 
     </head>
+    
+    <% HttpSession s = request.getSession(true); %>
     <body>
         <div id="cabecera1">
             <h4 id="nombreUsuario">//NOMBRE DE USUARIO</h4>
@@ -34,7 +38,9 @@
                     <li class="arrow"></li>
                     <li><a>Verduras</a>
                         <ul>
-                            <li><a>Naranjas</a></li>
+                            <% s.setAttribute("tipo", "naranja"); %>
+                            <li value="1" name="categoria" id="categoria"><a href="vProd"</a></li>
+                            <% s.setAttribute("tipo", "Manzana"); %>
                             <li><a>Manzanas</a></li>
                             <li><a>Melón</a></li>
                         </ul>

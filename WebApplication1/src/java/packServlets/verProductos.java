@@ -11,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -33,6 +34,8 @@ public class verProductos extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        HttpSession s = request.getSession(true);
+        request.getParameter("categoria");
         try {
             /* TODO output your page here. You may use following sample code. */
             out.println("<html>");
@@ -40,7 +43,7 @@ public class verProductos extends HttpServlet {
             out.println("<title>Servlet verProductos</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet verProductos at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet verProductos at " + request.getParameter("categoria") + "</h1>");
             out.println("</body>");
             out.println("</html>");
         } finally {            
