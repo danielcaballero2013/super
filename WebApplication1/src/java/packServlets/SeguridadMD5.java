@@ -23,7 +23,7 @@ import java.util.logging.Logger;
  * @author eduford
  */
 @WebServlet(name = "Registro", urlPatterns = {"/Registro"})
-public class Registro extends HttpServlet {
+public class SeguridadMD5 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP
@@ -113,7 +113,7 @@ public class Registro extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (NoSuchAlgorithmException ex) {
-            Logger.getLogger(Registro.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SeguridadMD5.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -132,7 +132,7 @@ public class Registro extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (NoSuchAlgorithmException ex) {
-            Logger.getLogger(Registro.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SeguridadMD5.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
