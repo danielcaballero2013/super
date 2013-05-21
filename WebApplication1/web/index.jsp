@@ -33,7 +33,10 @@
     <% HttpSession s = request.getSession(true);%>
     <body>
         <div id="cabecera1">
-            <h4 id="nombreUsuario">//NOMBRE DE USUARIO</h4>
+            <%if(s.getAttribute("usuario")!=null){ %>
+            <h4 id="nombreUsuario">Bienvenido <a href="MiCuenta.jsp"><%=s.getAttribute("usuario")%></a> - <a href="MiCompra.jsp">Carrito</a></h4>
+            <%}else{%>
+                <h4 id="nombreUsuario"><a href="MiCuenta.jsp">Identificarse/Registrarse</a></h4> <%}%>
         </div>
         <ul id="jMenu">
             <li><a class="fNiv">Alimentos Frescos</a><!-- Do not forget the "fNiv" class for the first level links !! -->
@@ -71,7 +74,7 @@
                     <li><a href="vProd?name=helados&sub=pizza">Pizzas</a>
                     </li>
                     <li><a href="vProd?name=helados&sub=postre">Postres</a></li>
-                    <li><a>Panadería  </a>
+                    <li><a>Pan  </a>
                         <ul>
                             <li><a href="vProd?name=helados&sub=pan">Pan</a></li>
                             <li><a href="vProd?name=helados&sub=churro">Churros</a></li>
@@ -100,18 +103,19 @@
         </br>
 
         <div id="makeMeScrollable">
-            <img src="Imagenes/images/Oferta/1.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/2.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/3.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/5.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/6.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/7.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/8.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/7.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/Oferta/8.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Albariño.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Alzola.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Aqua.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Aquarious.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Lambrusco.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Lanjaron.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Monster.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Redbull.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Rosado.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Txakoli.jpg" alt="Demo image" id="imga" />
         </div>
         <div id="central">
-            <%-- <hr id="linea"></hr> --%>
+            
 
             <% Hashtable productos = (Hashtable) s.getAttribute("productos");
 
