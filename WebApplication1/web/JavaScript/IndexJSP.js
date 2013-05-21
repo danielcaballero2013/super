@@ -9,4 +9,8 @@ function changeList(a)
   return false;
 }
 
+function enviar(){
+    document.getElementById("producto").submit();
+}
+
 
