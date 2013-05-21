@@ -39,13 +39,16 @@
             <li><a class="fNiv">Alimentos Frescos</a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
-                    <li><a>Verduras</a>
+                    <li><a <a href="vProd?name=alimentosfrescos&sub=fruta">Frutas</a>
+
+                    </li>
+                    <li><a> Pescados </a>
                         <ul>
-                            <li><a href="vProd?name=manzanas">Manzanas</a></li>
-                            <li><a href="vProd?name=melon">Melón</a></li>
+                            <li><a href="vProd?name=alimentosfrescos&sub=anchoa">Anchoas</a></li>
+                            <li><a href="vProd?name=alimentosfrescos&sub=merluza">Merluza</a></li>
                         </ul>
                     </li>
-                    <li><a> Pescados </a></li>
+
                 </ul>
             </li>
             <li><a class="fNiv"> Limpieza </a><!-- Do not forget the "fNiv" class for the first level links !! -->
@@ -65,38 +68,28 @@
             <li><a class="fNiv">Helados</a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
-                    <li><a>Category 1.2</a>
-                        <ul>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
-                        </ul>
+                    <li><a href="vProd?name=helados&sub=pizza">Pizzas</a>
                     </li>
-                    <li><a>Category 1.2</a></li>
-                </ul>
-            </li>
-            <li><a class="fNiv">Conservas</a><!-- Do not forget the "fNiv" class for the first level links !! -->
-                <ul>
-                    <li class="arrow"></li>
-                    <li><a>Category 1.2</a>
+                    <li><a href="vProd?name=helados&sub=postre">Postres</a></li>
+                    <li><a>Panadería  </a>
                         <ul>
-                            <li><a>Bombón</a></li>
-                            <li><a>Tarrina</a></li>
+                            <li><a href="vProd?name=helados&sub=pan">Pan</a></li>
+                            <li><a href="vProd?name=helados&sub=churro">Churros</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a class="fNiv">Dulces</a><!-- Do not forget the "fNiv" class for the first level links !! -->
+            <li><a class="fNiv">Bebidas</a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
-                    <li><a>Category 1.2</a>
+                    <li><a href="vProd?name=bebidas&sub=agua">Agua</a></li>
+                    <li><a href="vProd?name=bebidas&sub=refresco">Refrescos</a></li>
+                    <li><a>Vino</a>
                         <ul>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
+                            <li><a href="vProd?name=bebidas&sub=blanco">Blanco</a></li>
+                            <li><a href="vProd?name=bebidas&sub=rosado">Rosado</a></li>
                         </ul>
                     </li>
-                    <li><a>Category 1.2</a></li>
                 </ul>
             </li>
         </ul>
@@ -107,21 +100,23 @@
         </br>
 
         <div id="makeMeScrollable">
-            <img src="Imagenes/images/demo/1.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/demo/2.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/demo/3.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/demo/5.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/demo/6.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/demo/7.jpg" alt="Demo image" id="imga" />
-            <img src="Imagenes/images/demo/8.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/1.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/2.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/3.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/5.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/6.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/7.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/8.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/7.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/8.jpg" alt="Demo image" id="imga" />
         </div>
         <div id="central">
             <%-- <hr id="linea"></hr> --%>
 
             <% Hashtable productos = (Hashtable) s.getAttribute("productos");
+
                 if (productos != null) {%>
             <form name="producto" action="aCarrito">
-
                 <% Set p = productos.keySet();
                     Iterator it = p.iterator();
                     while (it.hasNext()) {
@@ -148,10 +143,10 @@
                 <%}
                     }%>
             </form>
-            
+
         </div>
-            <div id="pie">
-            
+        <div id="pie">
+
         </div>
         <script type="text/javascript">
             $(document).ready(function() {
