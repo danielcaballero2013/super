@@ -16,6 +16,16 @@
         <servlet-name>aCarrito</servlet-name>
         <url-pattern>/aCarrito</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>miCar</servlet-name>
+        <servlet-class>packServlets.MiCarrito</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>miCar</servlet-name>
+        <url-pattern>/miCar</url-pattern>
+    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30
