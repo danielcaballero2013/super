@@ -8,6 +8,14 @@
         <servlet-name>vProd</servlet-name>
         <url-pattern>/vProd</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>aCarrito</servlet-name>
+        <servlet-class>packServlets.añadirCarrito</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>aCarrito</servlet-name>
+        <url-pattern>/aCarrito</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

@@ -22,6 +22,10 @@ root {
     margin: 0;
 }
 
+.jMenu a:link{
+    text-decoration: none;
+}
+
 .jMenu li a {
     padding: 10px;
     display: block;
@@ -30,6 +34,7 @@ root {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 12px;
+    text-decoration: none;
 }
 
 /* Lower levels */
@@ -39,6 +44,7 @@ root {
     z-index:9999;
     padding: 0;
     margin: 0;
+    height: 0;
 }
 
 .jMenu li ul li {
@@ -72,6 +78,7 @@ root {
     display: block;
     border: 1px solid transparent;
     
+    
 }
 
 .jMenu li ul li a.isParent {
@@ -88,6 +95,7 @@ root {
     background-color: white;
     border-top: 1px solid #322f32;
     border-bottom: 1px solid #322f32;
+    text-decoration: none;
 }
 
 

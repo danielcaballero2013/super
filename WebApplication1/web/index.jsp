@@ -4,6 +4,9 @@
     Author     : Daniel
 --%>
 
+<%@page import="java.util.Hashtable"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.Set"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,84 +15,84 @@
         <link rel="stylesheet" href="Estilos/IndexCSS.css" type="text/css"/>
         <link rel="stylesheet" href="Estilos/jMenu.jquery.css" type="text/css" />
         <link rel="Stylesheet" type="text/css" href="Estilos/smoothDivScroll.css" />
+        <script type="text/javascript" src="JavaScript/indexJSP.js"></script>
+
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script type="text/javascript" src="JavaScript/jquery-ui.js"></script>
         <script type="text/javascript" src="JavaScript/jMenu.jquery.js"></script>
-        
+
         <script src="JavaScript/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
         <script src="JavaScript/jquery.mousewheel.min.js" type="text/javascript"></script>
         <script src="JavaScript/jquery.kinetic.js" type="text/javascript"></script>
         <script src="JavaScript/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
         <title>Index</title>
-        
+
 
     </head>
+
+    <% HttpSession s = request.getSession(true);%>
     <body>
         <div id="cabecera1">
-            <h4 id="nombreUsuario">//NOMBRE DE USUARIO</h4>
+            <%if(s.getAttribute("usuario")!=null){ %>
+            <h4 id="nombreUsuario">Bienvenido <a href="MiCuenta.jsp"><%=s.getAttribute("usuario")%></a> - <a href="MiCompra.jsp">Carrito</a></h4>
+            <%}else{%>
+                <h4 id="nombreUsuario"><a href="MiCuenta.jsp">Identificarse/Registrarse</a></h4> <%}%>
         </div>
         <ul id="jMenu">
             <li><a class="fNiv">Alimentos Frescos</a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
-                    <li><a>Verduras</a>
+                    <li><a <a href="vProd?name=alimentosfrescos&sub=fruta">Frutas</a>
+
+                    </li>
+                    <li><a> Pescados </a>
                         <ul>
-                            <li><a>Naranjas</a></li>
-                            <li><a>Manzanas</a></li>
-                            <li><a>Melón</a></li>
+                            <li><a href="vProd?name=alimentosfrescos&sub=anchoa">Anchoas</a></li>
+                            <li><a href="vProd?name=alimentosfrescos&sub=merluza">Merluza</a></li>
                         </ul>
                     </li>
-                    <li><a> Pescados </a></li>
+
                 </ul>
             </li>
-            <li><a class="fNiv"> Lácteos </a><!-- Do not forget the "fNiv" class for the first level links !! -->
+            <li><a class="fNiv"> Limpieza </a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
-                    <li><a>Leche</a>
+                    <li><a>Bolsa de Basura</a>
                         <ul>
-                            <li><a>Desnatada</a></li>
-                            <li><a>Entera</a></li>
-                            <li><a>Semidesnatada</a></li>
+                            <li><a href="vProd?name=limpieza&sub=pequeña">Pequeñas</a></li>
+                            <li><a href="vProd?name=limpieza&sub=30">30L</a></li>
+                            <li><a href="vProd?name=limpieza&sub=50">50L</a></li>
                         </ul>
                     </li>
-                    <li><a>Yogur</a></li>
+                    <li><a href="vProd?name=limpieza&sub=lejia">Lejía</a></li>
+                    <li><a href="vProd?name=limpieza&sub=utiles">Útiles de limpieza</a></li>
                 </ul>
             </li>
             <li><a class="fNiv">Helados</a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
-                    <li><a>Category 1.2</a>
-                        <ul>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
-                        </ul>
+                    <li><a href="vProd?name=helados&sub=pizza">Pizzas</a>
                     </li>
-                    <li><a>Category 1.2</a></li>
-                </ul>
-            </li>
-            <li><a class="fNiv">Conservas</a><!-- Do not forget the "fNiv" class for the first level links !! -->
-                <ul>
-                    <li class="arrow"></li>
-                    <li><a>Category 1.2</a>
+                    <li><a href="vProd?name=helados&sub=postre">Postres</a></li>
+                    <li><a>Pan  </a>
                         <ul>
-                            <li><a>Bombón</a></li>
-                            <li><a>Tarrina</a></li>
+                            <li><a href="vProd?name=helados&sub=pan">Pan</a></li>
+                            <li><a href="vProd?name=helados&sub=churro">Churros</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a class="fNiv">Dulces</a><!-- Do not forget the "fNiv" class for the first level links !! -->
+            <li><a class="fNiv">Bebidas</a><!-- Do not forget the "fNiv" class for the first level links !! -->
                 <ul>
                     <li class="arrow"></li>
-                    <li><a>Category 1.2</a>
+                    <li><a href="vProd?name=bebidas&sub=agua">Agua</a></li>
+                    <li><a href="vProd?name=bebidas&sub=refresco">Refrescos</a></li>
+                    <li><a>Vino</a>
                         <ul>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
-                            <li><a>Category 1.3</a></li>
+                            <li><a href="vProd?name=bebidas&sub=blanco">Blanco</a></li>
+                            <li><a href="vProd?name=bebidas&sub=rosado">Rosado</a></li>
                         </ul>
                     </li>
-                    <li><a>Category 1.2</a></li>
                 </ul>
             </li>
         </ul>
@@ -98,42 +101,72 @@
         </div>
         </br>
         </br>
-        
+
         <div id="makeMeScrollable">
-		<img src="Imagenes/images/demo/1.jpg" alt="Demo image" id="imga" />
-		<img src="Imagenes/images/demo/2.jpg" alt="Demo image" id="imga" />
-		<img src="Imagenes/images/demo/3.jpg" alt="Demo image" id="imga" />
-		<img src="Imagenes/images/demo/5.jpg" alt="Demo image" id="imga" />
-		<img src="Imagenes/images/demo/6.jpg" alt="Demo image" id="imga" />
-		<img src="Imagenes/images/demo/7.jpg" alt="Demo image" id="imga" />
-		<img src="Imagenes/images/demo/8.jpg" alt="Demo image" id="imga" />
-	</div>
-        <% for(int x=0; x<10; x++){ %>
-        <div id="centro">
-            <img src="Imagenes/images/demo/1.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Albariño.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Alzola.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Aqua.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Aquarious.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Lambrusco.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Lanjaron.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Monster.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Redbull.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Rosado.jpg" alt="Demo image" id="imga" />
+            <img src="Imagenes/images/Oferta/Txakoli.jpg" alt="Demo image" id="imga" />
         </div>
-        
-        <% } %>
-        
-        <div id="centro">
+        <div id="central">
             
+
+            <% Hashtable productos = (Hashtable) s.getAttribute("productos");
+
+                if (productos != null) {%>
+            <form name="producto" action="aCarrito">
+                <% Set p = productos.keySet();
+                    Iterator it = p.iterator();
+                    while (it.hasNext()) {
+                        String nom = (String) it.next();
+                        Double prec = (Double) productos.get(nom);%>
+
+                <div id="centro">
+                    <table>
+                        <tr rowspan="2">
+                            <td>
+                                <img src="Imagenes/images/Imagenes/<%= nom%>.jpg" alt="Demo image" id="imga" />
+                            </td>
+                            <td id="tabla">
+                                <p id="precio"> Precio </p>
+                                <p> <%= prec%> € </p>
+                                <button name="nombre" value="<%= nom%>" action="" >Añadir al carro</button>
+                                <%-- <input type="submit" value=""> --%>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <%}
+                    }%>
+            </form>
+
         </div>
-       
+        <div id="pie">
+
+        </div>
         <script type="text/javascript">
             $(document).ready(function() {
                 $("#jMenu").jMenu();
             });
         </script>
-        
+
         <script type="text/javascript">
-		// Initialize the plugin with no custom options
-		$(document).ready(function () {              
-			// None of the options are set
-			$("div#makeMeScrollable").smoothDivScroll({   
-				autoScrollingMode: "onStart"
-			});
-		});
-	</script>
-        
+            // Initialize the plugin with no custom options
+            $(document).ready(function () {              
+                // None of the options are set
+                $("div#makeMeScrollable").smoothDivScroll({   
+                    autoScrollingMode: "onStart"
+                });
+            });
+        </script>
+
     </body>
 </html>

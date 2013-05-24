@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mi cuenta</title>
         <link rel="stylesheet" href="Estilos/EstiloMiCuenta.css" type="text/css"/>
+        <script type="text/javascript" src="JavaScript/Micuenta.js"></script>
     </head>
     <body>
        <div id="cabecera1">
@@ -32,10 +33,10 @@
                         <h5 class="estilosCabecerasTabla">Nombre</h5>
                     </td>
                     <td>
-                        <input disabled="true" class="inp" type="text" id="txtNombre" name="tNombre" value="Nombre" />
+                        <input disabled="true" id="txtNombreID" class="inp" type="text" id="txtNombre" name="tNombre" value="Nombre" />
                     </td>
                     <td class="cabecerasTabla">
-                        <a href="#" class="">Cambiar</a>
+                        <a href="#" id="cambiaNombre" class="" onclick="activarCambiarNombre(1);">Cambiar</a>
                     </td>
                 </tr>
                 <tr>
@@ -46,7 +47,7 @@
                         <input disabled="true" class="inp" type="text" id="txtApellidos" name="tApellidos" value="Apellidos" />
                     </td>
                     <td class="cabecerasTabla">
-                        <a href="#" class="cabecerasTabla">Cambiar</a>
+                        <a href="#" id="cambiarApellidos" class="cabecerasTabla" onclick="activarCambiarNombre(2);">Cambiar</a>
                     </td>
                 </tr>
                 <tr>
