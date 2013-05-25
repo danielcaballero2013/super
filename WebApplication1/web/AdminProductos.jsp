@@ -3,7 +3,12 @@
     Created on : 25-may-2013, 12:03:14
     Author     : Daniel
 --%>
-
+<%@page import="com.sun.crypto.provider.RSACipher"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,17 +18,46 @@
         <link rel="stylesheet" media="all" href="Estilos/estilosProductos.css" type="text/css" />
     </head>
     <body>
+         <%
+              
+        Connection con = null;
+        String url=new String("jdbc:odbc:supermercado");
+        Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+        con=DriverManager.getConnection(url,"","");
+        Statement st = con.createStatement();
+        ResultSet rs=null;
+        rs=st.executeQuery("select id,nombre from producto;");
+        %>
         <div id="panelSuperioConfiguracion"><h4 id="tituloSuperior">Panel del productos</h4></div>
          <div id="botonesOpciones">
             <table>
                 <tr>
-                <select class="contenedor-select">
-                    <option class="impar" value ="Volvo">Volvo</option>
-                    <option class="par"  value ="Volvo">Volvo</option>
-                    <option class="impar"  value ="Volvo">Volvo</option>
-                    <option class="par"  value ="Volvo">Volvo</option>
+                     <select class="contenedor-select">
+                    <% 
+                        int id;
+                        String nombre;
+                        int contador=1;
+                        String par="";
+                        while(rs.next())
+                        {
+                            id=rs.getInt("id");
+                            nombre=rs.getString("nombre");
+                            if(contador%2==0)
+                            {
+                                par="par";
+                            }
+                            else
+                            {
+                                par="impar";
+                            }
+                            
+                        
+                    %>
+               
+                    <option class="<%= par%>" value ="<%= id%>"><%= nombre%></option>
                     
-                </select>
+                    <% } %>   
+                     </select>
                 </tr>
                 <tr>
                      <td><input  class="boton" type="button" id="botonGestionProductos" value="Alta" /></td>
