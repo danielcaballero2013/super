@@ -26,6 +26,17 @@
         <url-pattern>/miCar</url-pattern>
     </servlet-mapping>
     
+    
+    
+    <servlet>
+        <servlet-name>control</servlet-name>
+        <servlet-class>packServlets.controlAccionProductos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>control</servlet-name>
+        <url-pattern>/cP</url-pattern>
+    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30
