@@ -6,6 +6,13 @@ package packServlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,21 +36,66 @@ public class controlAccionProductos extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    Connection con =null;
+    
+   
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         try {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet controlAccionProductos</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet controlAccionProductos at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            String botonAlta=(String)request.getParameter("alta");
+            String botonBaja=(String)request.getParameter("baja");
+            String botonModifi=(String)request.getParameter("modifi");
+            String idProducto=(String)request.getParameter("opcionesPro");
+            
+            
+            if(botonBaja.equals("Baja"))
+            {
+                String dns=new String("jdbc:odbc:supermercado");
+                    try
+                    {
+                        Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+
+                    }
+                    catch(ClassNotFoundException cnf)
+                    {
+                        System.out.println("Error");
+                    }
+
+                    try
+                    {
+                        con= DriverManager.getConnection(dns,"","");
+                    }
+                    catch(SQLException sqlEx)
+                    {
+                        System.out.println("Error al conectar");
+                    }
+
+                    System.out.println("Iniciando la conexion con la base de datos correctamente");
+
+                            Statement stm=null;
+                            ResultSet rs = null;
+                            try
+                            {
+                                stm=con.createStatement();
+                                PreparedStatement st = con.prepareStatement("delete from producto where id=?");
+                                int pro=Integer.parseInt(idProducto);
+                                st.setInt(1,pro);
+                                rs=st.executeQuery();
+                                con.close();
+                            }
+                            catch(Exception e)
+                            {
+                                System.err.println("EOOOOOOOOOOOOOOO");
+                            }
+                    
+                   //getServletContext().getRequestDispatcher("/AdminProductos.jsp").forward(request, response);
+            }       response.sendRedirect("AdminProductos.jsp");
+//            else
+//            {
+//                //url modificacion de producto
+//            }
         } finally {            
             out.close();
         }

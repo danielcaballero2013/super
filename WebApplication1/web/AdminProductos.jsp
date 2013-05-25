@@ -30,9 +30,10 @@
         %>
         <div id="panelSuperioConfiguracion"><h4 id="tituloSuperior">Panel del productos</h4></div>
          <div id="botonesOpciones">
+             <form id="formularioOProducto" name="pForm" action="cP" method="get" />
             <table>
                 <tr>
-                     <select class="contenedor-select">
+                     <select id="opcionesPro" name="opcionesPro" class="contenedor-select">
                     <% 
                         int id;
                         String nombre;
@@ -60,11 +61,11 @@
                      </select>
                 </tr>
                 <tr>
-                     <td><input  class="boton" type="button" id="botonGestionProductos" value="Alta" /></td>
-                     <td><input  class="boton" type="button" id="botonGestionProductos" value="Baja" /></td>
-                     <td><input  class="boton" type="button" id="botonGestionProductos" value="Modificac&oacute;n" /></td>
+                     <td><input type="submit"  class="boton" name="alta" name="alta" value="Alta" /></td>
+                     <td><input type="submit"   class="boton" name="baja"  name="baja" value="Baja" /></td>
+                     <td><input type="submit"   class="boton" name="modificacion" name="modifi" value="Modificac&oacute;n" /></td>
                 </tr>
-                
+                </form>
             </table>
         </div>
         <div id="decoration"></div>
