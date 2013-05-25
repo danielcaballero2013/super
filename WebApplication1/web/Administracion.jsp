@@ -18,10 +18,14 @@
         <div id="botonesOpciones">
             <table>
                 <tr>
-                    <td><input class="boton" type="button" id="botonGestionUsuarios" value="Gesti&oacute;n usarios" /></td>
+                
+                <td><input class="boton" type="submit"  id="botonGestionUsuarios" value="Gesti&oacute;n usarios" /></td>
+                    
                 </tr>
                 <tr>
-                     <td><input  class="boton" type="button" id="botonGestionProductos" value="Gesti&oacute;n productos" /></td>
+                    <form id="formularioGestioProductos" name="fPro" action="AdminProductos.jsp" method="post" />
+                    <td><input   class="boton" type="button" id="botonGestionProductos" value="Gesti&oacute;n productos" /></td>
+                    </form>
                 </tr>
                 
             </table>
