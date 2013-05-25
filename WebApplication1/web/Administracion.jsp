@@ -24,7 +24,7 @@
                 </tr>
                 <tr>
                     <form id="formularioGestioProductos" name="fPro" action="AdminProductos.jsp" method="post" />
-                    <td><input   class="boton" type="button" id="botonGestionProductos" value="Gesti&oacute;n productos" /></td>
+                    <td><input   class="boton" type="submit" id="botonGestionProductos" value="Gesti&oacute;n productos" /></td>
                     </form>
                 </tr>
                 
