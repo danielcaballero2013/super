@@ -18,14 +18,12 @@
         <div id="botonesOpciones">
             <table>
                 <tr>
-                    <td><input type="button" id="botonGestionUsuarios" value="Gesti&oacute;n usarios" /></td>
+                    <td><input class="boton" type="button" id="botonGestionUsuarios" value="Gesti&oacute;n usarios" /></td>
                 </tr>
                 <tr>
-                     <td><input type="button" id="botonGestionProductos" value="Gesti&oacute;n productos" /></td>
+                     <td><input  class="boton" type="button" id="botonGestionProductos" value="Gesti&oacute;n productos" /></td>
                 </tr>
-                <tr>
-                    <a href="" class=”button”>Hover over me!</a>
-                </tr>
+                
             </table>
         </div>
         
