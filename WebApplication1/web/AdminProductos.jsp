@@ -50,7 +50,7 @@
                             {
                                 par="impar";
                             }
-                            
+                            contador++;
                         
                     %>
                
