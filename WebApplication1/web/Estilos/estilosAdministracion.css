@@ -24,6 +24,15 @@ body{
     text-align: center;
       
 }
+#decoration
+{
+    height:30px;
+    width:100%;
+    border: solid 1px white;
+    border-radius: 8px;
+    background-color: #6A0888;
+    margin-top: 17%;
+}
 #tituloSuperior
 {
     color:black;
@@ -39,7 +48,7 @@ body{
     background-color: #F2F2F2;
     text-align: center;
     margin-top: 14%;
-    margin-left: 28.5%;
+    margin-left: 28.9%;
 }
 td{
     
@@ -77,7 +86,7 @@ input
     background:-moz-linear-gradient( center top, #d1d1d1 5%, #ffffff 100% );
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1d1d1', endColorstr='#ffffff');
     background-color:#d1d1d1;
-    color:red;
+    color:#A901DB;
 }.boton:active {
     position:relative;
     top:1px;
