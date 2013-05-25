@@ -1,0 +1,120 @@
+/* 
+    Document   : IndexCSS
+    Created on : 26-feb-2013, 18:56:29
+    Author     : Javi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body
+{
+    background-color: #ffffff;
+}
+#cabecera1
+{
+    background-color: #8BA21C;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: right;  
+}
+
+#nombreUsuario
+{
+    font-family: Verdana;
+    padding: 12px;
+}
+
+#cabecera2
+{
+    background-color: #E2017B;
+    height: 40px;
+    border-radius: 15px;
+}
+
+#central{
+    margin-left: 7.7%;
+    margin-right: 12%;
+}
+
+#tabla{
+    text-align: center;
+}
+
+#linea{
+    margin-top: 40px;
+}
+
+#a
+{
+    background-color: #8BA21C;
+    height: 40px;
+    border-radius: 15px;
+}
+
+#b
+{
+    background-color: #E2017B;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 2.5%;
+}
+
+#precio{
+    font-weight: bold;
+}
+
+#centro
+{
+    float: left;
+    background-color: #81DAF5;
+    margin-top: 50px;
+    margin-left: 6%;
+    width:275px;
+    height: 156px;
+
+}
+
+#imga{
+    height: 150px;
+}
+
+#pie
+{
+    float: bottom;
+    background-color: #0194D9;
+    border-radius: 15px;
+    height: 15px;
+    margin-top: 50%;
+}
+
+#makeMeScrollable
+{
+    margin-left: 12.5%;
+    width:75%;
+    height: 150px;
+    position: relative;
+}
+
+/* Replace the last selector for the type of element you have in
+   your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+   if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+#makeMeScrollable div.scrollableArea img
+{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    /* If you don't want the images in the scroller to be selectable, try the following
+       block of code. It's just a nice feature that prevent the images from
+       accidentally becoming selected/inverted when the user interacts with the scroller. */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

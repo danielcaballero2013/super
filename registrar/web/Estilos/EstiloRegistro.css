@@ -1,0 +1,40 @@
+/* 
+    Document   : EstiloRegistro
+    Created on : 03-mar-2013, 18:32:01
+    Author     : amoreno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+.datos
+{
+    font-size: 20px;
+}
+.registro
+{
+    background-color: #8BA21C;
+    height: 40px;
+    margin-top: 2.5%;
+    border:2px solid black;
+    font-size: 30px;
+}
+.boton
+{
+    border-radius: 15px;
+    font-size: 18px;
+    width: 200px;
+    color: white;
+    background-color: navy;
+   
+}
+.login
+{
+    font-size: 30px;
+    color: white;
+}
+
+
+

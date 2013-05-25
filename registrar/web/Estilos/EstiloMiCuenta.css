@@ -1,0 +1,97 @@
+/* 
+    Document   : EstiloMiCuenta
+    Created on : 23-feb-2013, 1:11:38
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    background-color: #ffffff;
+   
+
+
+}
+
+#cabecera1
+{
+    background-color: #8BA21C;
+    height: 40px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: right;
+   
+    
+}
+#nombreUsuario
+{
+   font-family: Verdana;
+     padding: 12px;
+}
+
+#cabecera2
+{
+    background-color: #E2017B;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 2.5%;
+}
+#pie
+{
+    background-color: #0194D9;
+    border-radius: 15px;
+    height: 15px;
+    margin-top: 13%;
+}
+#tablaDatos
+{
+    background-color: lightgrey;
+   
+   
+}
+#cabeceraTitulo
+{
+    text-align: center;
+   
+}
+#cabeceraTitTexto
+{
+    margin-left: 36px;
+}
+table{
+    margin-left: 34.6%;
+    margin-top: 0.5%;
+    width:365px;
+}
+td{
+     border: solid 1px black;
+}
+
+.cabecerasTabla
+{
+    text-align: center;
+}
+.inp
+{
+    width: 100%;
+    text-align: center;
+    font-family: Verdana;
+}
+.estilosCabecerasTabla
+{
+    font-family: Verdana;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: 11px;
+    font-family: Verdana;
+    font-weight: bold;
+    
+}

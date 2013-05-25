@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Agregar</servlet-name>
+        <servlet-class>packServlets.agregar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Agregar</servlet-name>
+        <url-pattern>/agregarCliente</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>vProd</servlet-name>
+        <servlet-class>packServlets.verProductos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>vProd</servlet-name>
+        <url-pattern>/vProd</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>aCarrito</servlet-name>
+        <servlet-class>packServlets.añadirCarrito</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>aCarrito</servlet-name>
+        <url-pattern>/aCarrito</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>miCar</servlet-name>
+        <servlet-class>packServlets.MiCarrito</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>miCar</servlet-name>
+        <url-pattern>/miCar</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>control</servlet-name>
+        <servlet-class>packServlets.controlAccionProductos</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>control</servlet-name>
+        <url-pattern>/cP</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

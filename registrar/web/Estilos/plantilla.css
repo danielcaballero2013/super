@@ -1,0 +1,44 @@
+/* 
+    Document   : plantilla
+    Created on : 20-feb-2013, 18:10:49
+    Author     : Daniel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    background-color: #ffffff;
+}
+#a
+{
+    background-color: #8BA21C;
+    height: 40px;
+    border-radius: 15px;
+}
+
+#b
+{
+    background-color: #E2017B;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 2.5%;
+    font-size: 18px;
+}
+#pie
+{
+    background-color: #0194D9;
+    border-radius: 15px;
+    height: 15px;
+    margin-top: 8%;
+}
+
+.error
+{
+    color: red;
+    font-size: 30px;
+}
