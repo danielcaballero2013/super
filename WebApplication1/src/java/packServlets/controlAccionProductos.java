@@ -89,9 +89,9 @@ public class controlAccionProductos extends HttpServlet {
                             {
                                 System.err.println("EOOOOOOOOOOOOOOO");
                             }
-                    
-                   //getServletContext().getRequestDispatcher("/AdminProductos.jsp").forward(request, response);
-            }       response.sendRedirect("AdminProductos.jsp");
+                    response.sendRedirect("AdminProductos.jsp");
+                   }  
+            
 //            else
 //            {
 //                //url modificacion de producto
