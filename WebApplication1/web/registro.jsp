@@ -22,7 +22,7 @@
         <a href="index.jsp">Volver</a>
     </div>
     <div align="center" class="registro">Registrarse</div>
-    <form >    
+    <form name="registro" id="registro" action="agregarCliente" method="post">    
     <table align="center" id="datos">
             <tr>
                 <td>
