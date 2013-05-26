@@ -89,7 +89,7 @@ public class controlAccionProductos extends HttpServlet {
                             {
                                 System.err.println("EOOOOOOOOOOOOOOO");
                             }
-                    response.sendRedirect("AdminProductos.jsp");
+                    response.sendRedirect("Administracion.jsp");
                    }  
             
 //            else
