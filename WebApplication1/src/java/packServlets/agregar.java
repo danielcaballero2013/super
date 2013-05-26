@@ -21,7 +21,6 @@ import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 //import java.util.logging.Level;
@@ -69,7 +68,7 @@ public class agregar extends HttpServlet {
     try {
             Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
             baseDeDatos = "jdbc:odbc:supermercado";
-            conexion = DriverManager.getConnection(baseDeDatos,"","");
+            conexion = DriverManager.getConnection(baseDeDatos);
             System.out.println("Se ha conectado a " + baseDeDatos);
         } catch (Exception e) {
             System.out.println("No se ha conectado a " + baseDeDatos);
@@ -78,12 +77,12 @@ public class agregar extends HttpServlet {
      try 
       {
         Statement sentencia = conexion.createStatement();
-        sentencia.executeUpdate("insert into cliente (dni, nombre, apellido, direccion, correoelectronico, provincia, telefono, passwd, codpostal)"
-                + " values ('"+dni+"','"+nombre+"','"+apellido+"','"+direccion+"','"+email+"','"+provincia+"','"+telefono+"','"+pass+"','"+codigoPostal+"')");
+        sentencia.executeUpdate("INSERT INTO CLIENTE (dni, nombre, apellido, direccion, correoelectronico, provincia, telefono, passwd, codpostal)"
+                + " VALUES ('"+dni+"','"+nombre+"','"+apellido+"','"+direccion+"','"+email+"','"+provincia+"','"+telefono+"','"+pass+"','"+codigoPostal+"')");
         
       } 
-      catch (SQLException e) {
-            System.err.println(e.getSQLState());
+      catch (Exception e) {
+            System.err.println(e) ;
             //return false;
         }
     
