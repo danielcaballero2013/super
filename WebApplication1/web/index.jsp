@@ -36,7 +36,7 @@
             <%if(s.getAttribute("usuario")!=null){ %>
             <h4 id="nombreUsuario">Bienvenido <a href="MiCuenta.jsp"><%=s.getAttribute("usuario")%></a> - <a href="miCar">Carrito</a></h4>
             <%}else{%>
-                <h4 id="nombreUsuario"><a href="Registro.jsp">Identificarse/Registrarse</a></h4> <%}%>
+                <h4 id="nombreUsuario"><a href="iden_regis.jsp">Identificarse/Registrarse</a></h4> <%}%>
         </div>
         <ul id="jMenu">
             <li><a class="fNiv">Alimentos Frescos</a><!-- Do not forget the "fNiv" class for the first level links !! -->

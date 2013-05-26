@@ -9,7 +9,7 @@
 root { 
     display: block;
 }
-#datos
+.datos
 {
     font-size: 20px;
 }
@@ -25,7 +25,15 @@ root {
 {
     border-radius: 15px;
     font-size: 18px;
+    width: 200px;
+    color: white;
+    background-color: navy;
    
+}
+.login
+{
+    font-size: 30px;
+    color: white;
 }
 
 

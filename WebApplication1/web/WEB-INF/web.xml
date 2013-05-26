@@ -16,7 +16,6 @@
         <servlet-name>aCarrito</servlet-name>
         <url-pattern>/aCarrito</url-pattern>
     </servlet-mapping>
-    
     <servlet>
         <servlet-name>miCar</servlet-name>
         <servlet-class>packServlets.MiCarrito</servlet-class>
@@ -25,9 +24,6 @@
         <servlet-name>miCar</servlet-name>
         <url-pattern>/miCar</url-pattern>
     </servlet-mapping>
-    
-    
-    
     <servlet>
         <servlet-name>control</servlet-name>
         <servlet-class>packServlets.controlAccionProductos</servlet-class>
@@ -37,6 +33,14 @@
         <url-pattern>/cP</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>agre</servlet-name>
+        <servlet-class>packServlets.agregar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>agre</servlet-name>
+        <url-pattern>/agregarCliente</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
