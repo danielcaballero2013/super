@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 25-may-2013, 10:39:14
+    Document   : Registro
+    Created on : 20-feb-2013, 17:32:57
     Author     : Andrea
 --%>
 
@@ -22,8 +22,8 @@
         <a href="index.jsp">Volver</a>
     </div>
     <div align="center" class="registro">Registrarse</div>
-    <form name="registro" id="registro" action="agregarCliente" method="get" />   
-    <table align="center" class="datos">
+    <form >    
+    <table align="center" id="datos">
             <tr>
                 <td>
                      <br> <br>
@@ -142,4 +142,3 @@
      <div id="pie"></div>
     </body>
 </html>
-
